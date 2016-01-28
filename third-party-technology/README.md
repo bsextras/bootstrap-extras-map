@@ -1,6 +1,22 @@
 # Third-party technology
 Bootstrap extras ("BSX") leverages third-party libraries for rapid development. The scope of this document is to explain which third-party resources are used, and how they are being incorporated.
 
+## Table of Contents
+- [Dependencies](#dependencies)
+	- [jQuery](#jquery)
+	- [Bootstrap](#bootstrap)
+- [Drop-in libraries](#drop-in-libraries)
+	- [Underscore](#underscore)
+	- [Backbone](#backbone)
+- [Development dependencies](#development-dependencies)
+	- [Sass](#sass)
+	- [Grunt](#grunt)
+		- [Grunt plugins](#grunt-plugins)
+- [Documentation](#documentation)
+	- [JSDoc](#jsdoc)
+	- [Jekyll](#jekyll)
+	- [GitHub Pages](#github-pages)
+
 ## Dependencies
 
 ### jQuery
