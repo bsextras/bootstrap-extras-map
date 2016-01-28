@@ -29,4 +29,5 @@ Table of contents
   - Modal
   - Table
 
-[1] https://github.com/bsextras/bootstrap-extras-map/tree/master/components/ "Components"
+
+[1]: https://github.com/bsextras/bootstrap-extras-map/tree/master/components/ "Components"
