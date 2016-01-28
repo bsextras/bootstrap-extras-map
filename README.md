@@ -24,7 +24,9 @@ Table of contents
   - Text alignment
   - Table
     - Sortable
-- Components
+- [Components][1]
   - Datepicker
   - Modal
   - Table
+
+[1] https://github.com/bsextras/bootstrap-extras-map/tree/master/components/ "Components"
