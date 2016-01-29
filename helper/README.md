@@ -4,18 +4,69 @@ Bootstrap extras ("BSX") ships with a helper tool for handling common DOM, objec
 ## DOM helpers
 
 __addClass__ `_.addClass(elem, className)`
+```javascript
+var div = document.createElement('div')
+_.addClass(div, 'some-class')
+```
+```html
+<div class="some-class"></div>
+```
 
 __addClasses__ `_.addClasses(elem, classNames)`
+```javascript
+var div = document.createElement('div')
+_.addClasses(div, ['some-class', 'some-other-class'])
+```
+```html
+<div class="some-class some-other-class"></div>
+```
 
 __addClassOnce__ `_.addClassOnce(elem, className)`
+```javascript
+var div = document.createElement('div')
+_.addClass(div, 'some-class')
+_.addClassOnce(div, 'some-class')
+```
+```html
+<div class="some-class"></div>
+```
 
 __addClassesOnce__ `_.addClassesOnce(elem, classNames)`
+```javascript
+var div = document.createElement('div')
+_.addClass(div, 'some-class')
+_.addClassesOnce(div, ['some-class', 'some-other-class'])
+```
+```html
+<div class="some-class some-other-class"></div>
+```
 
 __createElement__ `_.createElement(nodeName, [attrs])`
+```javascript
+var div = _.createElement('div', { id: 'div1' })
+```
+```html
+<div id="div1"></div>
+```
 
 __dataAttrs__ `_.dataAttrs(elem)`
+```javascript
+var div = document.createElement('div')
+div.setAttribute('data-key', 'A')
+div.setAttribute('data-some-other-key', 'B')
+var data = _.dataAttrs(div)
+```
+```javascript
+{ key: 'A', 'someOtherKey': 'B' }
+```
 
 __hasClass__ `_.hasClass(elem, className)`
+```javascript
+var div = document.createElement('div')
+_.addClass(div, 'some-class')
+_.hasClass(div, 'some-class'      ) >> TRUE
+_.hasClass(div, 'some-other-class') >> FALSE
+```
 
 __removeClass__ `_.removeClass(elem, className)`
 
@@ -27,7 +78,9 @@ __flattenJson__ `_.flattenJson(object)`: Flattens a JSON object to single level,
 ```javascript
 var obj = { 'user': { 'id': 1, 'username': 'Joe' } }
 _.flattenJson(obj) 
-// { 'user.id': 1, 'user.username': 'Joe' }
+```
+```javascript
+{ 'user.id': 1, 'user.username': 'Joe' }
 ```
 
 ## Array helpers
@@ -39,8 +92,10 @@ var arr = [
   { 'user': { 'id': 2, 'username': 'John' } }
 ]
 _.flattenJsonArray(arr) 
-// [{ 'user.id': 1, 'user.username': 'Joe' },
-//  { 'user.id': 2, 'user.username': 'John' }]
+```
+```javascript
+[{ 'user.id': 1, 'user.username': 'Joe' },
+ { 'user.id': 2, 'user.username': 'John' }]
 ```
 
 ## Intersecting methods
