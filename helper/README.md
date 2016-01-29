@@ -69,8 +69,24 @@ _.hasClass(div, 'some-other-class') >> FALSE
 ```
 
 __removeClass__ `_.removeClass(elem, className)`
+```javascript
+var div = document.createElement('div')
+_.addClasses(div, ['some-class', 'some-other-class'])
+_.removeClass(div, 'some-class')
+```
+```html
+<div class="some-other-class"></div>
+```
 
 __removeClasses__ `_.removeClasses(elem, classNames)`
+```javascript
+var div = document.createElement('div')
+_.addClasses(div, ['some-class', 'some-other-class'])
+_.removeClass(div, ['some-class', 'some-other-class'])
+```
+```html
+<div></div>
+```
 
 ## Object helpers
 
