@@ -1,4 +1,4 @@
-# Select
+# Select Box
 
 ## Options
 
@@ -11,12 +11,12 @@
 | Method | Description | Parameters | Returns |
 | ------ | ----------- | ---------- | ------- |
 | destroy | Reverts the DOM element to its initial state | N/A | void |
-| render | Renders the Select element | N/A | `this` |
+| render | Renders the SelectBox element | N/A | `this` |
 | ... | ... | ... | ... |
 
 ## Events
 
 | Event | Description |
 | ----- | ----------- |
-| all.bs.select | Fired before all `*.bs.modal` events |
+| all.bs.selectbox | Fired before all `*.bs.selectbox` events |
 | ... | ... |
